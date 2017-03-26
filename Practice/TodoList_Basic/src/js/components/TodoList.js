@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./todolist.css";
 
 export default class TodoList extends React.Component {
     constructor() {
@@ -34,7 +35,7 @@ export default class TodoList extends React.Component {
                        onChange={this.handleInputChange.bind(this)}
                 />
                 <button onClick={this.handleClick.bind(this)}>Add</button>
-                <ul>
+                <ul className={styles.list}>
                     {this.state.items.map((item) => {
                         return <li key={item}>{item}</li>
                     })}
