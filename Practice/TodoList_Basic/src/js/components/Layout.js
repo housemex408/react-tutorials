@@ -13,7 +13,7 @@ export default class Layout extends React.Component {
     return (
       <div>
         <h1>{this.state.title}</h1>
-        <TodoList/>
+        <TodoList placeHolder="type a new item"/>
       </div>
     );
   }
